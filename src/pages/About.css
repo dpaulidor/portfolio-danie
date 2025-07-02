@@ -1,0 +1,84 @@
+.about-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-cv-spacer {
+  margin-top: 5.5rem;
+}
+
+.cv-section-intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cv-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c2aa64;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.cv-section-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+.about-image img {
+  max-width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #bfa36f; /* Indigo 600 */
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #d4ba78; /* Indigo 700 */
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #bba35f;
+  border: 2px solid #d1b167;
+}
+
+.btn-outline:hover {
+  background-color: #eef2ff; /* Indigo 100 */
+}
