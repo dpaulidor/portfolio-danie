@@ -1,0 +1,250 @@
+/* .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f172a;  
+  padding: 4rem 2rem;
+  color: #f1f5f9;
+  min-height: 100vh;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+/* .hero-image img {
+  width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+} */ 
+
+.hero-image img {
+  width: 500px;  /* plus petit */
+  max-width: 100%; /* pour s'adapter sur petits écrans */
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  order: 2;
+  margin-top: 2rem;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #f6f5f3;   */
+  padding: 4rem 2rem;
+  color: #f1f5f9;
+  min-height: 100vh;
+
+  /* background-image: url('/background.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Effet parallaxe léger */
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  /* background-color: rgba(15, 23, 42, 0.8);  */
+  z-index: -1;
+}
+
+
+.small-text {
+  font-size: 1.2rem;
+  color: #161718;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  
+}
+
+.highlight {
+  color: #b79f63; /* Indigo */
+  font-weight: bold;
+  display: block;
+  font-size: 25px;
+  
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #31302f;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #22272e;
+  margin-bottom: 2rem;
+}
+
+/* .cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; */
+
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+
+}
+
+.btn-primary {
+  background-color: #e3ab85;
+  color: white;
+
+}
+
+.btn-primary:hover {
+  /* background-color: #4f46e5; */
+}
+
+.btn-secondary {
+  border: 2px solid #dbaa7a;
+  color: #76735a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0b184;
+}
+
+/* ---- Espacement visuel des boutons ---- */
+.hero .cta {
+  margin-top: 4rem;           /* espace après la photo (sur desktop aussi) */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ---- Affichage responsive : mobile ---- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    order: 1;
+    max-width: 100%;
+  }
+
+  
+
+  .hero .cta {
+    order: 3;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 70vw;
+    max-width: 300px;
+  }
+}
+
+
+
+/* .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  gap: 2rem;
+} */
+
+/* .hero-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+  text-align: left; */
+
+
+/* .hero-image {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+} */
+
+/* .hero-image img {
+  width: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
+
+
+.cta {
+  margin-top: 4rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-left: -50px;  /* décale le bloc vers la gauche */
+ 
+  
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* .hero-text {
+    text-align: center;
+  } */
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+ 
+}
+
+

@@ -30,7 +30,7 @@
 
 
 .about-image img {
-  max-width: 250px;
+  max-width: 300px;
   border-radius: 10px;
   object-fit: cover;
 }

@@ -1,0 +1,33 @@
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  color: #1a1a1a;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  /* color: #1a1a1a; */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-links a:hover {
+  /* color: #b79f63; */
+  transition: color 0.3s ease;
+}
+.nav a {
+  /* color: #1a1a1a; */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  justify-content: center;
+  text-align: center;
+} 

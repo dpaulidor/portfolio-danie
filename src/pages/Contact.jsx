@@ -1,6 +1,6 @@
-// src/pages/Contact.js
+// src/pages/Contact.jsx
 import React, { useState } from 'react';
-import './Contact.css';
+import '../styles/Contact.css';  // ✅ mise à jour du chemin
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -9,7 +9,7 @@ function Contact() {
     e.preventDefault();
     setSubmitted(true);
 
-    // Simulation d'envoi - à remplacer avec EmailJS ou autre plus tard
+    // 🚧 Simulation d'envoi — à remplacer par EmailJS plus tard
     setTimeout(() => {
       alert('Message envoyé avec succès !');
       setSubmitted(false);
@@ -20,7 +20,7 @@ function Contact() {
     <div className="contact-container">
       <h2 className="contact-title">Contactez-moi</h2>
       <p className="contact-subtitle">
-        Vous pouvez m’écrire un message ou me joindre directement à : <br />
+        Vous pouvez m’écrire un message ou me joindre directement à :<br />
         <strong>danikapaulidor@gmail.com</strong>
       </p>
 

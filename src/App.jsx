@@ -1,12 +1,12 @@
-
-
+// eslint-disable-next-line no-unused-vars
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import About from './pages/About';  // <-- Import ajouté
+import About from './pages/About';
 
 function App() {
   return (
@@ -15,12 +15,15 @@ function App() {
       <Navbar />
       <main style={{ padding: '20px' }}>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />  {/* Nouvelle route */}
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
+
+      {/* ✅ Footer utilisé ici */}
+      <Footer />
     </Router>
   );
 }
