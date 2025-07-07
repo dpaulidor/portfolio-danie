@@ -5,19 +5,19 @@ const projects = [
   {
     title: "Plateforme Webmobile",
     description: "Application webmobile,pour la gestion de rendez-vous médicaux, développée avec React et Flask.",
-    image: "/project-webmobile.jpg",
+    image: "/project-webmobile.png",
     link: "https://github.com/dpaulidor/WebMobile-Store"
   },
   {
     title: "Mon Portfolio Web",
     description: "Site personnel réalisé avec React pour présenter mes projets, mes compétences et mon parcours.",
-    image: "/project-portfolio.jpg",
+    image: "/project-portfolio.png",
     link: "https://github.com/dpaulidor/portfolio-danie"
   },
   {
     title: "Bibliothèque C#",
     description: "Système de gestion de livres sous Windows Forms. Il permet d'ajouter, modifier et supprimer des livres.",
-    image: "/project-winforms.jpg",
+    image: "/project-winforms.png",
     link: "https://github.com/dpaulidor/winforms-library-manager"
   }
 ];

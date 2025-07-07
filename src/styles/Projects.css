@@ -70,7 +70,7 @@
 
 .project-description {
   font-size: 0.95rem;
-  color: #555;
+  color: #181212;
   margin-bottom: 20px;
 }
 
@@ -110,12 +110,12 @@
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(107, 91, 149, 0.3);
+  box-shadow: 0 4px 6px rgba(38, 36, 43, 0.3);
 }
 
 .project-button:hover {
-  background-color: #58467a; /* violet plus foncé */
-  box-shadow: 0 6px 12px rgba(88, 70, 122, 0.5);
+  background-color: #2e2d30; /* violet plus foncé */
+  box-shadow: 0 6px 12px rgba(22, 19, 27, 0.5);
 }
 
 
@@ -156,7 +156,7 @@
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: center;
-  color: #252424;
+  color: #161313;
   font-weight: bold;
 }
 

@@ -8,7 +8,7 @@ function About() {
     <section className="about-container">
       {/* Image à gauche */}
       <div className="about-image">
-        <img src="/moi.jpg" alt="Danika Paulidor" />
+        <img src="/Ma-photo.jpg" alt="Danika Paulidor" />
       </div>
 
       {/* Texte à droite */}
@@ -39,7 +39,7 @@ function About() {
   </div>
 
   <div className="cv-image-block">
-    <img src="/profil1.jpg" alt="Danika Paulidor - CV" />
+    <img src="/moi.jpg" alt="Danika Paulidor - CV" />
   </div>
 </div>
 
