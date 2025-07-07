@@ -31,3 +31,49 @@
   justify-content: center;
   text-align: center;
 } 
+
+.connect-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #5f27cd, #b79f63);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.connect-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Style général de la navbar */
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: none;
+  border-bottom: none;
+  background-color: white;
+}
+
+/* Liens de navigation */
+.navbar a {
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation au survol */
+.navbar a:hover {
+  transform: translateY(-4px);
+  color: #6b5b95;
+}

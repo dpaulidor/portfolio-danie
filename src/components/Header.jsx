@@ -4,7 +4,8 @@ import './Header.css';
 function Header() {
   return (
     <header className="site-header">
-      <h1><span className="name">Danika Paulidor</span></h1>
+     <img src="/logo.png" alt="Logo" style={{ height: "50px" }} />
+
     </header>
   );
 }

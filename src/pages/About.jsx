@@ -16,7 +16,7 @@ function About() {
         <h2>À propos de moi</h2>
 
         <p>
-          Je m’appelle <strong>Danika Paulidor</strong>, étudiante en <strong>4e année de licence en sciences informatiques</strong> à l’Université Espoir de Calvary Chapel.
+          Je m’appelle <strong>Danika Paulidor</strong>, étudiante en <strong>2e année de licence en sciences informatiques</strong> à l’Université Espoir de Calvary Chapel.
           Je suis passionnée par le développement, la résolution de problèmes, et la création de projets utiles.
         </p>
         <p>
@@ -27,10 +27,25 @@ function About() {
         </p>
         {/* Espace entre le À propos et la section CV */}
         <div className="about-cv-spacer"></div>
+    <div className="cv-row">
+  <div className="cv-text-block">
+    
+
+
+    <div className="cv-buttons">
+      <a href="/cv_danie.pdf" download className="btn btn-download"> Télécharger le CV</a>
+      <a href="/cv_danie.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-view">Lire en ligne</a>
+    </div>
+  </div>
+
+  <div className="cv-image-block">
+    <img src="/profil1.jpg" alt="Danika Paulidor - CV" />
+  </div>
+</div>
 
         {/* Introduction au CV intégré */}
        <div className="cv-section-intro">
-       <h3 className="cv-section-title">📄 Voici mon CV intégré</h3>
+       <h3 className="cv-section-title"> Voici mon CV intégré</h3>
        <p className="cv-section-subtitle">
        Cette section présente un aperçu de mon parcours professionnel, technique et personnel.
        </p>
@@ -102,17 +117,10 @@ function About() {
         {/* --- Centres d’intérêt --- */}
         <h3>Centres d’intérêt</h3>
         <p>Musique, séries, lecture, résolution de problèmes, recherche, technologies numériques.</p>
-
+      
         {/* --- Boutons CV --- */}
         <div className="cv-buttons">
-          <a
-            href="/Profil_Danika_Paulidor_4e_annee.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline"
-          >
-            Lire mon CV en ligne
-          </a>
+
 
           <a
             href="/Profil_Danika_Paulidor_4e_annee.pdf"

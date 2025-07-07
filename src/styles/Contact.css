@@ -34,7 +34,7 @@
 }
 
 .contact-form button {
-  background-color: #c79150;
+  background-color: #ecc38c;
   color: white;
   border: none;
   padding: 0.8rem;
@@ -45,7 +45,7 @@
 }
 
 .contact-form button:hover {
-  /* background-color: #4338ca; */
+  background-color: #cac363;
 }
 
 .contact-confirmation {

@@ -12,7 +12,7 @@
 
 .cv-section-intro {
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .cv-section-title {
@@ -28,9 +28,8 @@
   color: #555;
 }
 
-
 .about-image img {
-  max-width: 300px;
+  max-width: 350px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -39,6 +38,7 @@
   flex: 1;
 }
 
+/* 🧠 Grille de compétences */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -46,39 +46,97 @@
   margin-bottom: 1.5rem;
 }
 
+/* ✅ Boutons centrés */
 .cv-buttons {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
-  gap: 1rem;
-}
-
-.btn {
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   text-align: center;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 0.3s ease;
 }
 
-.btn-primary {
-  background-color: #bfa36f; /* Indigo 600 */
-  color: white;
+/* Style de tous les boutons */
+.cv-buttons .btn {
+  padding: 0.7rem 1.5rem;
   border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: fit-content;
 }
 
-.btn-primary:hover {
-  background-color: #d4ba78; /* Indigo 700 */
+/* 🎨 Style du bouton principal */
+.cv-buttons .btn-primary {
+  background: linear-gradient(to right, #e2c18e, #e07700);
 }
 
-.btn-outline {
-  background-color: transparent;
-  color: #bba35f;
-  border: 2px solid #d1b167;
+/* 🎨 Bouton secondaire (lecture en ligne) */
+.cv-buttons .btn-secondary {
+  background: #444;
 }
 
-.btn-outline:hover {
-  background-color: #eef2ff; /* Indigo 100 */
+/* Effet au survol */
+.cv-buttons .btn:hover {
+  transform: scale(1.05);
+}
+
+/* 🔽 Conteneur facultatif si besoin d’un autre centrage */
+.download-container {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 2rem; */
+}
+
+
+.cv-row {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.cv-text-block {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.cv-image-block {
+  flex: 1 1 35%;
+  text-align: right;
+}
+
+.cv-image-block img {
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 768px) {
+  .cv-row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  
+  .cv-image-block {
+    text-align: left;
+    
+  
+    /* gap: 3rem; */
+
+  }
+
+  
 }
