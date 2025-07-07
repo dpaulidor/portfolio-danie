@@ -1,4 +1,4 @@
-.nav-links {
+/* .nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -11,7 +11,6 @@
 }
 
 .nav-links a {
-  /* color: #1a1a1a; */
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -20,11 +19,9 @@
 }
 
 .nav-links a:hover {
-  /* color: #b79f63; */
   transition: color 0.3s ease;
 }
 .nav a {
-  /* color: #1a1a1a; */
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -50,7 +47,6 @@
 }
 
 
-/* Style général de la navbar */
 .navbar {
   padding: 10px 20px;
   display: flex;
@@ -65,15 +61,34 @@
   background-color: white;
 }
 
-/* Liens de navigation */
 .navbar a {
   color: #1a1a1a;
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Animation au survol */
 .navbar a:hover {
   transform: translateY(-4px);
   color: #6b5b95;
+} */
+
+.navbar {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background-color: transparent;
 }
+
+.navbar a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #6b5b95;
+  transform: translateY(-2px);
+}
+
