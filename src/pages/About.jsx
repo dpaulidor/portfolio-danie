@@ -135,7 +135,7 @@ function About() {
     <section className="about-container">
       {/* Colonne gauche = photo */}
       <div className="about-image">
-        <img src="/Ma-photo.jpg" alt="Danika Paulidor" />
+        <img src="/ma-photo.jpg" alt="Danika Paulidor" />
       </div>
 
       {/* Colonne droite = texte */}
